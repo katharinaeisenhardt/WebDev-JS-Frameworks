@@ -47,8 +47,15 @@ Code - @ BUDGER
 Remote-Zugraiff auf GraphQL Endpoint mit Redux in calories.js im Ordner actions:
 Code - @BUDGER
 
+Routing mit Redux implementiert.
+Zeichnung + Erklärung -> Kathi
+Funktionen Add, Update, !!!Delete erläutern.
+Code files - @BEIDE
 
-
-
-
-
+Verknüpfung Routing mit GraphCool
+Delete Funktion zum Laufen bringen
+Notizen hinzufügen
+Neue Daten in GraphCool übernehmen
+Authentifizierung
+Desktop und Mobile Ansichten 
+Schlagworte
