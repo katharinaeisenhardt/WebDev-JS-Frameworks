@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import { fetchCalorys } from '../actions/CaloryActions';
+import { fetchCalorys, deleteCalory } from '../actions/CaloryActions';
+
 
 class Calories extends Component {
   componentWillMount() {
@@ -12,19 +13,26 @@ class Calories extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.newCalory) {
-      this.props.Calories.push(nextProps.newCalory);
+      this.props.calories.push(nextProps.newCalory);
+    }
+    if(nextProps.updatedCalory){
+      this.props.calories.push(nextProps.updatedCalory);
+    }
+    if(nextProps.deletedCalory){
+      this.props.calories.splice(nextProps.deletedCalory);
     }
   }
 
   render() {
-    const caloryItems = this.props.Calories.map(Calory => (
-      <div key={Calory.id}>
-        <h3>{Calory.foodName}</h3>
-        <p>{Calory.calories}</p>
+    const caloryItems = this.props.calories.map(calory => (
+      <div key={calory.id}>
+        <h3>{calory.foodName}</h3>
+        <p>{calory.calories}</p>
         <button onClick={(e) => {
           e.preventDefault();
-          this.props.deleteCalory(Calory.id);
-        }}>Delete calories entry</button><Link to={`/Calory/${Calory.id}`} >Update calories</Link>
+          this.props.deleteCalory(calory.id);
+          window.location.reload()
+        }}>Delete calories entry</button><br/><Link to={`/Calory/${calory.id}`} >Update calories</Link>
       </div>
     ));
     return (
@@ -38,13 +46,17 @@ class Calories extends Component {
 
 Calories.propTypes = {
   fetchCalorys: PropTypes.func.isRequired,
-  Calories: PropTypes.array.isRequired,
-  newCalory: PropTypes.object
+  calories: PropTypes.array.isRequired,
+  newCalory: PropTypes.object,
+  updatetCalory: PropTypes.object,
+  deletedCalory: PropTypes.object
 };
 
 const mapStateToProps = state => ({
-  Calories: state.Calories.items,
-  newCalory: state.Calories.item
+  calories: state.Calories.items,
+  newCalory: state.Calories.item,
+  updatetCalory: state.Calories.item,
+  deletedCalory: state.Calories.item
 });
 
-export default withRouter(connect(mapStateToProps, { fetchCalorys })(Calories));
+export default withRouter(connect(mapStateToProps, { fetchCalorys, deleteCalory })(Calories));

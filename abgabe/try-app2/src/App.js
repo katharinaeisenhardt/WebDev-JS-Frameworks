@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 //components
 import Calories from './components/Calorys';
 import CaloryForm from './components/CaloryForm';
-import updateCalory from './components/UpdateCalory';
+import UpdateCalory from './components/UpdateCalory';
 
 const Header = () => {
   return (
@@ -31,7 +31,7 @@ class App extends Component {
             <Route path="/" component={Header} />
             <Route path="/" component={CaloryForm} />
             <Route path="/" component={Calories} />
-            <Route path="/Calory/:caloryid" component={updateCalory} />
+            <Route path="/Calory/:caloryid" component={UpdateCalory} />
           </div>
         </Router>
       </Provider>

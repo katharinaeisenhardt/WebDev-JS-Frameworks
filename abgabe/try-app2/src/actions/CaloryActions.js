@@ -1,11 +1,10 @@
-import { FETCH_CALORYS, NEW_CALORY, GET_CALORY, UPDATE_CALORY } from './ActionTypes';
+import { FETCH_CALORYS, NEW_CALORY, GET_CALORY, UPDATE_CALORY, DELETE_CALORY } from './ActionTypes';
 import { request } from 'graphql-request';
 
 export const fetchCalorys = () => dispatch => {
     const gcEndPoint = `https://api.graph.cool/simple/v1/cjk04i8xn03ti0167r7bur52q`
     const gcQuery = `query {allCalories {id foodName calories}}`
     request (gcEndPoint, gcQuery)
-      .then(res => res.json())
       .then(Calories =>
         dispatch({
           type: FETCH_CALORYS,
@@ -35,7 +34,7 @@ export const createCalory = CaloryData => dispatch => {
 };
 
 export const getCalory = id => dispatch => {
-    const gcEndPoint = `https://api.graph.cool/simple/v1/cjj1c5a8a13j50107quv7cl2v`
+    const gcEndPoint = `https://api.graph.cool/simple/v1/cjk04i8xn03ti0167r7bur52q`
     const gcQuery = `query getOneCalory($id: ID!)
     { Calory(id: $id)
     { id foodName calories }
@@ -53,7 +52,7 @@ export const getCalory = id => dispatch => {
 };
 
 export const updateCalory = CaloryData => dispatch => {
-    const gcEndPoint = `https://api.graph.cool/simple/v1/cjj1c5a8a13j50107quv7cl2v`
+    const gcEndPoint = `https://api.graph.cool/simple/v1/cjk04i8xn03ti0167r7bur52q`
     const gcQuery = `mutation updateActCalory($id: ID!, $foodName: String!, $calories: Int!)
     {  updateCalory ( id: $id, foodName: $foodName, calories: $calories )
         { id foodName calories }
@@ -72,3 +71,21 @@ export const updateCalory = CaloryData => dispatch => {
         })
     })
 };
+
+export const deleteCalory = id => dispatch => {
+    const gcEndPoint = `https://api.graph.cool/simple/v1/cjk04i8xn03ti0167r7bur52q`
+    const gcQuery = `mutation deleteActCalory($id: ID!)
+    {  deleteCalory ( id: $id )
+      { id foodName calories }
+    }`
+    const gcVar = {
+      "id": id
+    }
+    request (gcEndPoint, gcQuery, gcVar )
+    .then(Calory => {
+      dispatch({
+        type: DELETE_CALORY,
+        payload: Calory.deleteCalory
+      })
+    })
+  };

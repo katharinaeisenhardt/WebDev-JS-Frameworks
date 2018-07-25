@@ -1,4 +1,4 @@
-import { FETCH_CALORYS, NEW_CALORY } from '../actions/ActionTypes';
+import { FETCH_CALORYS, NEW_CALORY, GET_CALORY, UPDATE_CALORY, DELETE_CALORY } from '../actions/ActionTypes';
 
 const initialState = {
   items: [],
@@ -17,6 +17,21 @@ export default function(state = initialState, action) {
         ...state,
         item: action.payload
       };
+    case GET_CALORY:
+    return {
+      ...state,
+      item: action.payload
+    };
+    case UPDATE_CALORY:
+      return {
+        ...state,
+        item: action.payload
+      };
+    case DELETE_CALORY:
+    return {
+      ...state,
+      item: action.payload
+    };
     default:
       return state;
   }

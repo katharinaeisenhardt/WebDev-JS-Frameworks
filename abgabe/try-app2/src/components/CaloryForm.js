@@ -8,8 +8,8 @@ class CaloryForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      foodName: '',
-      calories: ''
+      foodName: 'pizza-pasta-burger',
+      calories: 'a hell of a lot'
     };
 
     this.onChange = this.onChange.bind(this);
@@ -23,12 +23,12 @@ class CaloryForm extends Component {
   onSubmit(e) {
     e.preventDefault();
 
-    const Calory = {
+    const calory = {
       foodName: this.state.foodName,
       calories: this.state.calories
     };
 
-    this.props.createCalory(Calory);
+    this.props.createCalory(calory);
   }
 
   render() {
