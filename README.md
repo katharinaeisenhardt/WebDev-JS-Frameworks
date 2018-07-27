@@ -91,8 +91,6 @@ Auf der Haupseite ist zunächst nur der Header und das Authentifizierungsformula
 Von der Hauptseite aus wird der Seitenteil unterhalb des Headers neu gerendert und man wird zur Kalorienliste weitergeleitet. Darunter ist das Formular zum manuellen Hinzufügen einzelner Kalorien zu sehen. Der Header bleibt immer zu sehen und verändert sich nicht.
 Beim Anklicken des Buttons "Delete" wird der untere Seitenteil erneut gerendert und der Kalorieneintrag ist nicht mehr zu sehen. Wird der Update-Link betätigt, rendert der besagte Seitenteil neu und es erscheint ein Kalorienformular zum Bearbeiten, dessen Felder mit den vorherigen Kaloriendaten ausgefüllt sind. Nachdem der "Update" Button angeklickt wurde, wird der Seitenteil wieder neu gerendert und führt zur Kalorienliste mit der Funktion zum Hinzufügen. 
 
-Zeichnung + Erklärung -> Kathi(Brauchen wir das?)
-
 Leider ergaben sich große Probleme beim Überschreiben der Daten in der Graphcool Datenbank über die Code Implementierung. Da sich so kurz fristig keine Hilfe mehr finden konnte, haben wir uns entschlossen das Projekt zu clonen und mit dem Graphcool CLI im Browser neu umzusetzen. Der Umgang mit Graphcool über die Browser Version ist um einiges intuitiver und angenehmer als die Implementierung auf Code Basis. Zumal man sich kaum Gedanken um die Synchronisation machen muss. 
 
 ![Graphcool Overview](GraphcoolWeb.PNG)
@@ -130,7 +128,7 @@ Wir zielen auf ein einfaches, strukturiertes Design ab, das nicht von Funktionsw
 Nutzer Dokumentation
 
 -Nutzer will manuell Kalorien einer Mahlzeit am Tag eintragen
--Nutzer liest FunFact
+-Nutzer landet auf HomeSeite
 -Nutzer muss sich erst registrieren, kann sich beim nächsten mal direkt einloggen
 -Nutzer sieht Übersicht seiner bisherigen Kalorien
 -Nutzer trägt Kalorien ein, Nutzer wählt Schlagworte aus
@@ -141,8 +139,5 @@ Nutzer Dokumentation
 Design ansprechend, intuitiv?
 
 Entscheidungsideen: 
-CrudStore vs Redux mit Routing
 Apollo vs Redux (Dafür wär ich !! Weil du bereits auch Apollo probiert hast und kannst dann erwähnen was der Vorteil ist aber warum wir uns dagegen entschieden haben)
-E-Mail-Passwort vs Auth0
-Graphcool service Code vs Graphcool service CLI
-Graphcool vs Intranet
+
