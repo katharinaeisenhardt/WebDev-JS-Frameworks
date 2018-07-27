@@ -138,7 +138,7 @@ Mit den zuvor angegebenen Daten meldet sich der Nutzer nun in unserem Loginberei
 Der Nutzer entscheidet sich dazu die Beispieleinträge in der Liste zu löschen und klickt auf den "Eintrag löschen"-Button. Daraufhin wird die Kalorienliste ohne den vorherigen Eintrag neu geladen und angezeigt.     
 Da ein bereits vorgefertigter Eintrag mit beinahe dem Frühstück des Benutzers übereinstimmt, entschließt sich der Benutzer dazu den Eintrag zu bearbeiten.     
 Der Link "Eintrag bearbeiten" wird angeklickt und führt zur Anzeige eines Bearbeitungsformulars mit schwarzem Hintergrund. Die Daten des ausgewählten Eintrags stehen bereits in den Feldern. Der Nutzer klickt in das Namensfeld und ergänzt die Speiße mit einem Beilagennamen. Anschließend klickt der Nutzer ins Feld der Kalorien, überschreibt die vorherige Kalorienanzahl und drückt auf den Button "Eintragen".
-Die Kalorienseite wird dem Benutzer mit dem überarbeitetn Eintrag neu angezeigt.     
+Die Kalorienseite wird dem Benutzer mit dem überarbeiteten Eintrag neu angezeigt.     
 Jetzt fehlt nur noch ein Eintrag zum Mitagessen der Person. Der Nutzer scrollt auf der Seite der Kalorienliste weiter nach unten und erblickt das Formular mit schwarzem Hintergrund zur Erstellung eines neuen Eintrags.    
 Nachdem die Felder "Name" und "Kalorien" ausgefüllt sind, betätigt der Nutzder den "Eintragen"-Button. Die Kalorienliste wird erneut geladen und mit dem neuen Eintrag dargestellt.   
 Nach weiterer Inspektion der Seite erblickt der Nutzer in der Kalorienliste die Option den einzelnen Einträgen Kalorienstufen in Form von Checkboxen hinzuzufügen.    
