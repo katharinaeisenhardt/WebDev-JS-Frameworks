@@ -81,3 +81,17 @@ Die Schlagworte sollen als vorerst einfache Lösung vordefiniert und unveränder
 
 Wir haben uns Gedanken zu den Desktop und Mobile Ansichten gemacht und gleich zu Anfang Wireframes dazu erstellt. Leider konnten wir diese im Laufe der Programmierung nicht beibehalten und sind zu einer anderen progressiven Darstellung gelangt. 
 Wir zielen auf ein einfaches, strukturiertes Design ab, das nicht von Funktionsweise zu sehr ablenkt. Zumal die Applikation in unserem Sinne erweiterbar sein soll und nicht durch ein vorgeschriebenes Design eingeschränkt werden soll. Die Ergänzung um neue Funktionen soll einfach und schnell gehen. 
+
+
+Nutzer Dokumentation
+
+-Nutzer will manuell Kalorien einer Mahlzeit am Tag eintragen
+-Nutzer liest FunFact
+-Nutzer muss sich erst registrieren, kann sich beim nächsten mal direkt einloggen
+-Nutzer sieht Übersicht seiner bisherigen Kalorien
+-Nutzer trägt Kalorien ein, Nutzer wählt Schlagworte aus
+-Nutzer lässt sich Liste der Schlagworte und Kalorien ausgeben
+-Nutzer will einen kalorieneintrag ändern, da falsche Kalorienanzahl recherchiert
+-Nutzer will Eintrag löschen, da falsches Essen eingetragen oder Eintrag zu alt bzw. unwichtig
+
+Design ansprechend, intuitiv?
