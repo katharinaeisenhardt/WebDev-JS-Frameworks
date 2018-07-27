@@ -120,7 +120,9 @@ componentWillReceiveProps(nextProps){
 
 Wir haben uns Gedanken zu den Desktop und Mobile Ansichten gemacht und gleich zu Anfang Wireframes dazu erstellt:
 
-Wireframes
+
+![Wireframe1](home.png)
+![Wireframe2](updatecalory.png)
 
 Leider konnten wir diese im Laufe der Programmierung nicht beibehalten und sind zu einer anderen progressiven Darstellung gelangt.    
 Wir zielen auf ein einfaches, strukturiertes Design ab, das nicht zu sehr von der Funktionsweise ablenkt. Zumal die Applikation in unserem Sinne erweiterbar sein soll und nicht durch ein komplexes, vorgeschriebenes Design eingeschränkt werden soll. Die Ergänzung um neue Funktionen soll einfach und schnell gehen.      
