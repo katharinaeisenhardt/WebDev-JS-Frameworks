@@ -149,7 +149,7 @@ Der Nutzer erblickt einen Link zu den Kalorienstufen und klickt darauf. Es ersch
 
 ## Erläuterung einer Entscheidung
 
-###Apollo vs Redux
+### Apollo vs Redux
 
 Im Laufe dieses Projekts stießen wir immer wieder auf größere Probleme in der Umsetzung mit Redux in Kombination mit Graphcool.    
 Zunächst wollten wir die ganze Applikation mit Redux implementieren, da uns Redux am geläufigsten ist durch das WPM. Auch der Virtual Reality Workshop hat die Kenntnisse noch einmal aufgefrischt und ergänzt, was bei der Programmierung sehr geholfen hat.     
