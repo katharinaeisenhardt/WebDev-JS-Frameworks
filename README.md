@@ -95,11 +95,17 @@ Zeichnung + Erklärung -> Kathi(Brauchen wir das?)
 
 Leider ergaben sich große Probleme beim Überschreiben der Daten in der Graphcool Datenbank über die Code Implementierung. Da sich so kurz fristig keine Hilfe mehr finden konnte, haben wir uns entschlossen das Projekt zu clonen und mit dem Graphcool CLI im Browser neu umzusetzen. Der Umgang mit Graphcool über die Browser Version ist um einiges intuitiver und angenehmer als die Implementierung auf Code Basis. Zumal man sich kaum Gedanken um die Synchronisation machen muss. 
 
-![Alt text](relative/path/to/img.jpg?raw=true "Title")
+![Graphcool Overview](GraphcoolWeb.PNG)
+
+Dieser Screenshot stellt unseren Graphcool Server dar. Wie man erkennen kann, ist diese Seiter übersichtlich und angenehmer gestaltet, als das Bedienen und Aufrufen des Graphcool Servers mit Hilfe der Commandline (Hier mussten Commands wie graphcool deploy, graphcool playground angewendet werden).
+Leider haben wir diesen Wechsel unserer Meinung nach zu spät durchgenommen, wordurch wir in Zeitverzug gekommen sind.
+
 Code files - @BEIDE
 
 Nachdem die Hauptbestandteil der Applikation mit React und Redux umgesetzt wurde, entschieden wir uns für eine einfache E-Mail-Passwort-Authentifikation von Graphcool. 
-Dafür muss zuerst die entsprechende Erweiterung der Authentifikation bei Graphcool aktiviert werden. Danach wird ein neues Query vom Typ User mit relations zum Query vom Typ Calory erstellt sowie die actions und reducers die den User betreffen. 
+Dafür muss zuerst die entsprechende Erweiterung der Authentifikation bei Graphcool aktiviert werden.
+
+Danach wird ein neues Query vom Typ User mit relations zum Query vom Typ Calory erstellt sowie die actions und reducers die den User betreffen. 
 
 Die Schlagworte sollen als vorerst einfache Lösung vordefiniert und unveränderbar sein. Ihre Verknüpfungen stellen die n:m-Beziehung zu den Kalorien dar. Umgesetzt werden die Verknüpfungen durch die Implementierung von User Input in Form von Checkboxen zu den Schlagworten und die Darstellung der Zuordnungen von Kalorien und Schlagworten in einer Liste.
 
