@@ -129,10 +129,12 @@ Wir zielen auf ein einfaches, strukturiertes Design ab, das nicht zu sehr von de
 Wir entscheiden uns für ein treffendes Hintergrundbild mit Speißewürfeln und einer Navigationsleiste im Header für den Login bzw. die Registrierung des Nutzers.      
 Die Hautptbestandteile, wie der Login und die Kalorienliste, werden in Formularen mit einer ähnlichen Hintergrundfarbe zum Hintergrundbild angezeigt. Die zusätzlichen Funktionen, wie Hinzufügen, Bearbeiten und Registrieren, werden in Formularen mit der Farbe des Headers angezeigt. Die Buttons werden abgerundet dargesteltt, um eine Abstraktion von den üblichen Mustermodellen der E-Mail-Formulare zu bewirken. 
 
-Die n:m Beziehung bzw die Schlagwörter wurden in unserem Projekt nicht umgesetzt. Während mehrmaligen Umkrempel der ReactApp oder Neuschreiben des Graphcool Servers, ist das anfangs geplant Zeitfenster für diese Basisanforderung kleiner geworden. Letztendlich ist auf Grund von fehlendem Basiswissen, wie auch zu knapper Zeit um sich dieses Wissen anzueigenen, dieser Teil der App nicht vorhanden.
-Zu Beginn haben wir uns erhoffe, es in unserer App zu ermöglichen, dass ein Gericht aus mehreren Lebensmittel besteht, und ein Lebensmittel in mehreren Gerichten vorkommen kann.
+Die n:m Beziehung bzw die Schlagwörter wurden in unserem Projekt nicht umgesetzt. Während mehrmaligem Umkrempeln der ReactApp oder Neuschreiben des Graphcool Servers, ist das anfangs geplante Zeitfenster für diese Basisanforderung kleiner geworden. Letztendlich ist auf Grund von fehlendem Basiswissen, wie auch zu knapper Zeit um sich dieses Wissen anzueigenen, dieser Teil der App nicht vorhanden.
+Zu Beginn haben wir uns erhofft, es in unserer App zu ermöglichen, dass ein Gericht aus mehreren Lebensmitteln besteht, und ein Lebensmittel in mehreren Gerichten vorkommen kann.
 
-Das Routing hat im localhost abgesehen von ein paar Macken stets funktioniert. Als die App bereit war gebuildet zu werden mit "npm run build" und online gestellt wurde, war ein fehlerfreies Routing nicht mehr möglich. Trotz detaillierter und langer Analyse von potentiellen Fehler und umschreiben und ausprobieren in Code, als auch exakt gleichem Vorgehen wie in den Vorlesungsfolien, konnte das Routing online nicht funktionsfähig gemacht werden.
+Das Routing hat im localhost abgesehen von ein paar Macken stets funktioniert. Als die App bereit war gebuildet zu werden mit "npm run build" und online gestellt wurde, war ein fehlerfreies Routing nicht mehr möglich. Trotz detaillierter und langer Analyse von potentiellen Fehler und umschreiben und ausprobieren im Code, als auch exakt gleichem Vorgehen wie in den Vorlesungsfolien, konnte das Routing online nicht funktionsfähig gemacht werden.
+
+
 ## Nutzer Dokumentation
 
 Ein fitnessorientierter Nutzer versucht seinen Kalorienverbrauch besser zu regeln und entscheidet sich dazu, die Kalorien seiner bisherigen Mahlzeiten an diesem Tag manuell in unserer Webapplikation fest zu halten.    
