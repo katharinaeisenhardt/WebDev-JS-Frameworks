@@ -16,7 +16,7 @@
 * Zugriff & Anzeige der Daten aus externer Datenbank
 
 ### Vorgehen:
-Mit der "Create React App"-Umgebung erstellen wir eine Single-Page Applikation für die finale Abgabe im Wahlpflichtmodul Webentwicklung und JavaScript Frameworks. Wir entscheiden uns für die Umsetzung einer Anwendung zur manuellen Eingabe und Verwaltung von Kalorien, um nahe beim Thema unseres Semesterprojekts WebFit zu bleiben und ein Gefühl für die Datenhaltung mit Datenbanken zu entwickeln.       Gleichzeitig haben wir das Ziel im Auge, diese bereits implementierte App bzw. Anwendung in das Projekt Webfit zu integrieren.
+Mit der "Create React App"-Umgebung erstellen wir eine Single-Page Applikation für die finale Abgabe im Wahlpflichtmodul Webentwicklung und JavaScript Frameworks. Wir entscheiden uns für die Umsetzung einer Anwendung zur manuellen Eingabe und Verwaltung von Kalorien, um nahe beim Thema unseres Semesterprojekts WebFit zu bleiben und ein Gefühl für die Datenhaltung mit Datenbanken zu entwickeln. Gleichzeitig haben wir das Ziel im Auge, diese bereits implementierte App bzw. Anwendung in das Projekt Webfit zu integrieren.
 
 Im nächsten Schritt nutzen wir das Graphcool Framework, registrieren uns und setzen einen eigenen Graphcool Service auf.
 
@@ -97,7 +97,7 @@ Wenn der Button "Eintragen" gedrückt wird, wird ebenso der Seitenteil mit der K
 
 ![Graphcool Overview](GraphcoolWeb.PNG)
 
-Dieser Screenshot stellt unseren Graphcool Server dar.      
+Dieser Screenshot stellt unseren Graphcool Server dar. Mit dem Type Calorie können Lebensmittel mit der jeweiligen Kalorienzahl erstellt werden. Und der Type User ermöglicht die Umsetzung der Email Authentifizierung. 
 Leider ergaben sich große Probleme beim Überschreiben der Daten in der Graphcool Datenbank über die Code Implementierung. Da sich so kurz fristig keine Hilfe mehr finden lies, haben wir uns entschlossen das Projekt zu clonen und mit dem Graphcool CLI im Browser neu umzusetzen.        
 Wie man erkennen kann, ist diese Seite mit der Browser Version übersichtlich, angenehmer und auch intuitiver gestaltet, als das Bedienen bzw. Aufrufen des Graphcool Servers mit Hilfe der Commandline und der Implementierung auf Code Basis (Hier mussten Commands wie graphcool deploy, graphcool playground angewendet werden). Zumal man sich kaum Gedanken um die Synchronisation machen muss.      
 Leider haben wir diesen Wechsel unserer Meinung nach zu spät durchgenommen, wordurch wir in Zeitverzug gekommen sind.      
