@@ -104,8 +104,22 @@ Code files - @BEIDE
 
 Nachdem die Hauptbestandteil der Applikation mit React und Redux umgesetzt wurde, entschieden wir uns für eine einfache E-Mail-Passwort-Authentifikation von Graphcool. 
 Dafür muss zuerst die entsprechende Erweiterung der Authentifikation bei Graphcool aktiviert werden.
+![Graphcool Email Plugin](EmailAuth.PNG)
+Dieses einfache, und praktische Plugin, ist ein weiterer Faktor, weswegen wir begeistert vom Browertool Graphcool sind. Mit diesem relativ leicht aktivierbaren Plugin kann spielerisch eine Emailauthetifizierung in die App integriert werden. 
+Nach anfänglicher Begeisterung, wurde einem bewusst, dass dieses Plugin mit großem Aufwand in unseren Code eingebettet werden musste und Fehlermeldungen, bzw. scheiternde Registrierungen sowie Anmeldungen mehrfach vorkamen. 
+Bis dato konnten wir keine fehlerfreie Version eines Logins erstellen.
+Registrierte User werden im GraphcoolServer gespeichert. Sind Anmeldungen möglich, ist fehlerfreies Routing nicht mehr möglich. Ist das Routing fehlerfrei, kann man sich nicht mehr anmelden.
+Dieser kleiner, aber feiner Unterschied wird durch kommentieren bzw. entkommentieren der Zeile window.location.assign("/home") in componentWillReceiveProps geschaltet.
+````
+componentWillReceiveProps(nextProps){
+    if(nextProps.userLogin){
+      //window.location.assign("/home")
+      //ROUTING!!
+    }
+````
 
-Danach wird ein neues Query vom Typ User mit relations zum Query vom Typ Calory erstellt sowie die actions und reducers die den User betreffen. 
+(???Verstehe ich nicht??) Danach wird ein neues Query vom Typ User mit relations zum Query vom Typ Calory erstellt sowie die actions und reducers die den User betreffen. 
+
 
 Die Schlagworte sollen als vorerst einfache Lösung vordefiniert und unveränderbar sein. Ihre Verknüpfungen stellen die n:m-Beziehung zu den Kalorien dar. Umgesetzt werden die Verknüpfungen durch die Implementierung von User Input in Form von Checkboxen zu den Schlagworten und die Darstellung der Zuordnungen von Kalorien und Schlagworten in einer Liste.
 
@@ -128,7 +142,7 @@ Design ansprechend, intuitiv?
 
 Entscheidungsideen: 
 CrudStore vs Redux mit Routing
-Apollo vs Redux
+Apollo vs Redux (Dafür wär ich !! Weil du bereits auch Apollo probiert hast und kannst dann erwähnen was der Vorteil ist aber warum wir uns dagegen entschieden haben)
 E-Mail-Passwort vs Auth0
 Graphcool service Code vs Graphcool service CLI
 Graphcool vs Intranet
