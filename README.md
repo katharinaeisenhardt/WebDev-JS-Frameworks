@@ -132,7 +132,9 @@ Die Hautptbestandteile, wie der Login und die Kalorienliste, werden in Formulare
 Die n:m Beziehung bzw die Schlagwörter wurden in unserem Projekt nicht umgesetzt. Während mehrmaligem Umkrempeln der ReactApp oder Neuschreiben des Graphcool Servers, ist das anfangs geplante Zeitfenster für diese Basisanforderung kleiner geworden. Letztendlich ist auf Grund von fehlendem Basiswissen, wie auch zu knapper Zeit um sich dieses Wissen anzueigenen, dieser Teil der App nicht vorhanden.
 Zu Beginn haben wir uns erhofft, es in unserer App zu ermöglichen, dass ein Gericht aus mehreren Lebensmitteln besteht, und ein Lebensmittel in mehreren Gerichten vorkommen kann.
 
-Das Routing hat im localhost abgesehen von ein paar Macken stets funktioniert. Als die App bereit war gebuildet zu werden mit "npm run build" und online gestellt wurde, war ein fehlerfreies Routing nicht mehr möglich. Trotz detaillierter und langer Analyse von potentiellen Fehler und umschreiben und ausprobieren im Code, als auch exakt gleichem Vorgehen wie in den Vorlesungsfolien, konnte das Routing online nicht funktionsfähig gemacht werden.
+Das Routing hat im localhost abgesehen von ein paar Macken stets funktioniert. Als die App bereit war gebuildet zu werden mit "npm run build" und online gestellt wurde, war ein fehlerfreies Routing nicht mehr möglich. Trotz detaillierter und langer Analyse von potentiellen Fehler und umschreiben und ausprobieren im Code, als auch exakt gleichem Vorgehen wie in den Vorlesungsfolien, konnte das Routing online nicht funktionsfähig gemacht werden.     
+Durch einige Forumsvorschläge kamen wir zu dem Schluss eine .htaccess Datei zu erstellen, die das fehlerhafte react-routing wieder auf den richtigen Dateipfad führt. Doch leider führte auch diese Lösung nicht zum gewünschten Ergebnis.     
+Letztendlich mussten wir einen ganz anderen Server unseres Kommilitonen beanspruchen, um die Applikation online zu stellen. Auf einmal wurde auch das Routing fehlerfrei durchgeführt. Lediglich beim Löschen eines Eintrages muss die Seite noch einmal aktualisiert werden. 
 
 
 ## Nutzer Dokumentation
