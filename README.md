@@ -152,11 +152,10 @@ Der Nutzer erblickt einen Link zu den Kalorienstufen und klickt darauf. Es ersch
 ### Apollo vs Redux
 
 Im Laufe dieses Projekts stießen wir immer wieder auf größere Probleme in der Umsetzung mit Redux in Kombination mit Graphcool.    
-Zunächst wollten wir die ganze Applikation mit Redux implementieren, da uns Redux am geläufigsten ist durch das WPM. Auch der Virtual Reality Workshop hat die Kenntnisse noch einmal aufgefrischt und ergänzt, was bei der Programmierung sehr geholfen hat.     
-Die Redux Komponenten, Action Creater und Reducer zu erstellen viel uns leicht.    
+Zunächst wollten wir die ganze Applikation mit Redux implementieren, da uns Redux am geläufigsten ist durch das WPM. Auch der Virtual Reality Workshop hat die Kenntnisse noch einmal aufgefrischt und ergänzt, was bei der Programmierung sehr geholfen hat. Die Redux Komponenten, Action Creater und Reducer zu erstellen viel uns leicht.    
 
 Allerdings stießen wir schon bald an unsere Grenzen, da uns die Graphcool Implementierung noch neu war:   
-Das Abändern von einzelnen Querys auf Code Basis funktionierte nicht wie vorhergesehen. Die Graphcool Services mussten ständig neu aufgesetzt werden, wenn die Probleme zu Umfangreich waren und die Dokumentation von Graphcool war für uns Anfänger leider nicht ausreichend. Man findet schnell was man sucht. Allerdings beschrieben die Tutorials nur oberflächlich den Sachverhalt und liesen meistens die Detailerklärungen aus, die einige unserer Probleme behoben hätten.    
+Das Abändern von einzelnen Querys auf Code Basis funktionierte nicht wie vorhergesehen. Die Graphcool Services mussten ständig neu aufgesetzt werden, wenn die Probleme zu umfangreich waren und die Dokumentation von Graphcool war für uns Anfänger leider nicht ausreichend. Man findet schnell was man sucht. Allerdings beschrieben die Tutorials nur oberflächlich den Sachverhalt und liesen meistens die Detailerklärungen aus, die einige unserer Probleme behoben hätten.    
 Diese undetailierte Dokumentation und fehlende Graphcool Tutorials für Redux waren ausschlagebend dafür, dass wir uns entschieden andere Tutorials auszuprobieren. Darunter waren auch ein paar Apollo Tutorials.    
 
 Exemplarisch haben wir eine Apollo Instagram Apllikation nachgebaut und auf unsere Applikationsbedingungen angepasst. Obwohl das Tutorial sehr ausführlich jeden Schritt erklärte, konnten wir nicht alles im Code nachvollziehen.   
