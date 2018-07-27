@@ -143,9 +143,6 @@ Der Link "Eintrag bearbeiten" wird angeklickt und führt zur Anzeige eines Bearb
 Die Kalorienseite wird dem Benutzer mit dem überarbeiteten Eintrag neu angezeigt.     
 Jetzt fehlt nur noch ein Eintrag zum Mitagessen der Person. Der Nutzer scrollt auf der Seite der Kalorienliste weiter nach unten und erblickt das Formular mit schwarzem Hintergrund zur Erstellung eines neuen Eintrags.    
 Nachdem die Felder "Name" und "Kalorien" ausgefüllt sind, betätigt der Nutzder den "Eintragen"-Button. Die Kalorienliste wird erneut geladen und mit dem neuen Eintrag dargestellt.   
-Nach weiterer Inspektion der Seite erblickt der Nutzer in der Kalorienliste die Option den einzelnen Einträgen Kalorienstufen in Form von Checkboxen hinzuzufügen.    
-Der Nutzer erblickt einen Link zu den Kalorienstufen und klickt darauf. Es erscheint eine Auflistung der Kalorienstufen mit den zugeordneten Lebensmitteln aus den Kalorieneinträgen. 
-
 
 ## Erläuterung einer Entscheidung
 
@@ -155,14 +152,14 @@ Im Laufe dieses Projekts stießen wir immer wieder auf größere Probleme in der
 Zunächst wollten wir die ganze Applikation mit Redux implementieren, da uns Redux am geläufigsten ist durch das WPM. Auch der Virtual Reality Workshop hat die Kenntnisse noch einmal aufgefrischt und ergänzt, was bei der Programmierung sehr geholfen hat. Die Redux Komponenten, Action Creater und Reducer zu erstellen viel uns leicht.    
 
 Allerdings stießen wir schon bald an unsere Grenzen, da uns die Graphcool Implementierung noch neu war:   
-Das Abändern von einzelnen Querys auf Code Basis funktionierte nicht wie vorhergesehen. Die Graphcool Services mussten ständig neu aufgesetzt werden, wenn die Probleme zu umfangreich waren und die Dokumentation von Graphcool war für uns Anfänger leider nicht ausreichend. Man findet schnell was man sucht. Allerdings beschrieben die Tutorials nur oberflächlich den Sachverhalt und liesen meistens die Detailerklärungen aus, die einige unserer Probleme behoben hätten.    
+Das Abändern von einzelnen Querys auf Code Basis funktionierte nicht wie vorhergesehen. Die Graphcool Services mussten ständig neu aufgesetzt werden, wenn die Probleme zu umfangreich waren und die Dokumentation von Graphcool war für uns Anfänger leider nicht ausreichend. Man findet schnell was man sucht. Allerdings beschrieben die Tutorials nur oberflächlich den Sachverhalt und ließen meistens die Detailerklärungen aus, die einige unserer Probleme behoben hätten.    
 Diese undetailierte Dokumentation und fehlende Graphcool Tutorials für Redux waren ausschlagebend dafür, dass wir uns entschieden andere Tutorials auszuprobieren. Darunter waren auch ein paar Apollo Tutorials.    
 
 Exemplarisch haben wir eine strukturierte und übersichtliche Apollo Instagram Apllikation nachgebaut und auf unsere Applikationsbedingungen angepasst. Obwohl das Tutorial sehr ausführlich jeden Schritt erklärte, konnten wir nicht alles im Code nachvollziehen.      
 
 Tutorial: https://github.com/graphcool-examples/react-graphql/tree/master/quickstart-with-apollo   
 
-Wenn wir unsere ganzen Applikations-Daten von Anfang an in die Graphcool Datenbank einbauten, gab es unmengen an Fehlermeldungen bezüglich React Imports, die sich auch nicht mit Hilfe von Google und anderen Informatikern lösen liesen.   
+Wenn wir unsere ganzen Applikations-Daten von Anfang an in die Graphcool Datenbank einbauten, gab es unmengen an Fehlermeldungen bezüglich React Imports, die sich auch nicht mit Hilfe von Google und anderen Informatikern lösen ließen.   
 Ebenso erfolglos gestaltete sich das Debuggen bei der schrittweisen Abänderung und Eintragung in die Graphcool Datenbank. Es wurden Fehler ohne zielführende Fehlermeldungen ausgegeben oder es gab gar keine Fehlermeldungen und die Ausführung der Applikation wurde abgebrochen. Stundenlang wurde debuggt und versucht die einzelnen Fehler zu finden sowie zu lösen. Falls ein Fehler behoben wurde, folgten fünf Weitere. Da der Code nicht von uns selbst geschrieben war und einige Dateien leider auch nicht weitergehend erklärt wurden, entschieden wir uns nach zwei Tagen und vielen Apollo Tutorials und Anleitungen wieder zu Redux zurückzukehren.
 
 Mit einem neuen Ansatz und einem frischen Kopf setzten wir uns wieder an die Redux-Kombination und verwendeten ab diesem Zeitpunkt den Graphcool Server in der Browser Version. Zusätzlich nutzten wir die WPM-Folien und ältere Projekte um bekannte Fehler zu beheben. Durch die Browser Version von Graphcool kamen so manche Probleme gar nicht mehr auf, wie zum Beispiel die Komplikationen beim Überschreiben der Daten in der Graphcool Datenbank beim Hinzufügen bzw. Ändern und Löschen der Kaloriendaten von der Applikation aus. 
