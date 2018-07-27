@@ -158,7 +158,10 @@ Allerdings stießen wir schon bald an unsere Grenzen, da uns die Graphcool Imple
 Das Abändern von einzelnen Querys auf Code Basis funktionierte nicht wie vorhergesehen. Die Graphcool Services mussten ständig neu aufgesetzt werden, wenn die Probleme zu umfangreich waren und die Dokumentation von Graphcool war für uns Anfänger leider nicht ausreichend. Man findet schnell was man sucht. Allerdings beschrieben die Tutorials nur oberflächlich den Sachverhalt und liesen meistens die Detailerklärungen aus, die einige unserer Probleme behoben hätten.    
 Diese undetailierte Dokumentation und fehlende Graphcool Tutorials für Redux waren ausschlagebend dafür, dass wir uns entschieden andere Tutorials auszuprobieren. Darunter waren auch ein paar Apollo Tutorials.    
 
-Exemplarisch haben wir eine strukturierte und übersichtliche Apollo Instagram Apllikation nachgebaut und auf unsere Applikationsbedingungen angepasst. Obwohl das Tutorial sehr ausführlich jeden Schritt erklärte, konnten wir nicht alles im Code nachvollziehen.   
+Exemplarisch haben wir eine strukturierte und übersichtliche Apollo Instagram Apllikation nachgebaut und auf unsere Applikationsbedingungen angepasst. Obwohl das Tutorial sehr ausführlich jeden Schritt erklärte, konnten wir nicht alles im Code nachvollziehen.      
+
+Tutorial: https://github.com/graphcool-examples/react-graphql/tree/master/quickstart-with-apollo   
+
 Wenn wir unsere ganzen Applikations-Daten von Anfang an in die Graphcool Datenbank einbauten, gab es unmengen an Fehlermeldungen bezüglich React Imports, die sich auch nicht mit Hilfe von Google und anderen Informatikern lösen liesen.   
 Ebenso erfolglos gestaltete sich das Debuggen bei der schrittweisen Abänderung und Eintragung in die Graphcool Datenbank. Es wurden Fehler ohne zielführende Fehlermeldungen ausgegeben oder es gab gar keine Fehlermeldungen und die Ausführung der Applikation wurde abgebrochen. Stundenlang wurde debuggt und versucht die einzelnen Fehler zu finden sowie zu lösen. Falls ein Fehler behoben wurde, folgten fünf Weitere. Da der Code nicht von uns selbst geschrieben war und einige Dateien leider auch nicht weitergehend erklärt wurden, entschieden wir uns nach zwei Tagen und vielen Apollo Tutorials und Anleitungen wieder zu Redux zurückzukehren.
 
